@@ -1,0 +1,242 @@
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <label class="category-title">Farmer's Category</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="col-md-3">
+          <label class="radio inline">
+            <input
+              type="radio"
+              name="gender"
+              value="male"
+              (change)="radioChange1()"
+            />
+            <span>
+            
+              General:
+            </span>
+          </label>
+        </div>
+        <div class="col-md-3">
+          <label class="radio inline">
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              (change)="radioChange1()"
+            />
+            <span>
+            
+              Scheduled Caste (SC):
+            </span>
+          </label>
+        </div>
+        <div class="col-md-3">
+          <label class="radio inline">
+            <input
+              type="radio"
+              name="gender"
+              value="other"
+              (change)="radioChange1()"
+            />
+            <span>
+         
+              Scheduled Tribes (ST):
+            </span>
+          </label>
+        </div>
+
+        <div class="col-md-3">
+          <label class="radio inline">
+            <input
+              type="radio"
+              name="gender"
+              value="other"
+              (change)="radioChange1()"
+            />
+            <span>
+         
+              Other Backward Class (OBC):
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <label class="category-title">Farmer's Category</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+   
+        <div class="col-md-12">
+          <label class="radio inline">
+            <input
+              type="radio"
+              name="gender"
+              value="male"
+              (change)="radioChange1($event)"
+            />
+            <span>
+             
+              General:
+            </span>
+          </label>
+        </div>
+        <div class="col-md-12">
+          <label class="radio inline">
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              (change)="radioChange1($event)"
+            />
+            <span>
+           
+              Scheduled Caste (SC):
+            </span>
+          </label>
+        </div>
+        <div class="col-md-12">
+          <label class="radio inline">
+            <input
+              type="radio"
+              name="gender"
+              value="other"
+              (change)="radioChange1($event)"
+            />
+            <span>
+             
+              Scheduled Tribes (ST):
+            </span>
+          </label>
+        </div>
+
+        <div class="col-md-12 mb-3">
+          <label class="radio inline">
+            <input
+              type="radio"
+              name="gender"
+              value="other"
+              (change)="radioChange1($event)"
+            />
+            <span>
+           
+              Other Backward Class (OBC):
+            </span>
+          </label>
+        </div>
+      
+    </div>
+  </div>
+</div> -->
+
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <label class="category-title">Farmer's Category</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+   
+        <div class="col-md-12">
+          <label class="radio inline">
+            <input
+              type="radio"
+              name="gender"
+              value="male"
+              (change)="radioChange1($event)"
+            />
+            <span>
+             
+              General:
+            </span>
+          </label>
+        </div>
+        <div class="col-md-12">
+          <label class="radio inline">
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              (change)="radioChange1($event)"
+            />
+            <span>
+           
+              Scheduled Caste (SC):
+            </span>
+          </label>
+        </div>
+        <div class="col-md-12">
+          <label class="radio inline">
+            <input
+              type="radio"
+              name="gender"
+              value="other"
+              (change)="radioChange1($event)"
+            />
+            <span>
+             
+              Scheduled Tribes (ST):
+            </span>
+          </label>
+        </div>
+
+        <div class="col-md-12 mb-3">
+          <label class="radio inline">
+            <input
+              type="radio"
+              name="gender"
+              value="other"
+              (change)="radioChange1($event)"
+            />
+            <span>
+           
+              Other Backward Class (OBC):
+            </span>
+          </label>
+        </div>
+      
+    </div>
+  </div>
+</div> -->
+
+
+<div class="container">
+  <div class="row">
+      <div class="col-lg-12">
+        <label class="category-title" >Farmer's Category</label>
+      </div>
+    </div>
+<div class="content_body mt-3">
+  <div class="select_box_cover mb-5 ">
+    <select
+      class="form-select select_box"
+      aria-label="Default select example"
+      placeholder="select language"
+      (change)="changeLanguage($event)"
+    >
+      <option selected disabled>--Select Farmer's Category--</option>
+      <option *ngFor="let caste of casteCtg" [value]="caste.text">
+       {{ caste.text}}
+      </option>
+    </select>
+  </div>
+</div>
+
+<div>
+  <button (click)="onNext()">Back</button>
+</div>
+</div>

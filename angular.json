@@ -28,9 +28,12 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -124,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "test"
+  "defaultProject": "test",
+  "cli": {
+    "analytics": "aae93920-e041-42bc-afb5-faf48d9b8632"
+  }
 }

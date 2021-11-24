@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 150px;
+}
+
+.absol {
+    width: 50%;
+    -webkit-box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    outline: 10px solid rgb(0, 51, 102, 0.5);
+}
+
+.retailerSale {
+    color: #003366;
+    font-size: 18px;
+    position: relative;
+}
+.retailerSale::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: #003366;
+    border-radius: 5px;
+    font-size: 12px;
+    position: absolute;
+    display: block;
+    bottom: -13px;
+    left: 0;
+}
+
+input{
+    width: 100%;
+    padding: 3px 8px;
+    text-align: center;
+}
+
